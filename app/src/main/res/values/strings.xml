@@ -1,0 +1,11 @@
+<resources>
+    <string name="continue_routine">Continue Routine</string>
+    <string name="create_routine">Create Routine</string>
+    <string name="app_name">Workout Tracker</string>
+    <string name="name_routine">Name Routine</string>
+    <string name="choose_split">Choose Split</string>
+    <string name="ppl">PPL</string>
+    <string name="upper_lower">Upper/Lower</string>
+    <string name="enter">Enter</string>
+    <string name="full_body">Full Body</string>
+</resources>
