@@ -8,4 +8,6 @@
     <string name="upper_lower">Upper/Lower</string>
     <string name="enter">Enter</string>
     <string name="full_body">Full Body</string>
+    <string name="edit_view_name">Edit View Name</string>
+    <string name="add_item_text">Add Item Text</string>
 </resources>
