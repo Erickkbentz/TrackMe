@@ -18,20 +18,20 @@
         android:textColor="@color/purple_main"
         android:textSize="40sp"
 
-        app:layout_constraintBottom_toTopOf="@+id/continueRoutineButton"
+        app:layout_constraintBottom_toTopOf="@+id/trackButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.429" />
 
     <Button
-        android:id="@+id/continueRoutineButton"
+        android:id="@+id/trackButton"
         android:layout_width="360dp"
         android:layout_height="80dp"
         android:background="@drawable/round_corner_purple"
 
         android:fontFamily="@font/open_sans_semibold"
-        android:text="@string/continue_routine"
+        android:text="@string/track"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="@dimen/main_activity_button"
@@ -58,7 +58,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/continueRoutineButton"
+        app:layout_constraintTop_toBottomOf="@+id/trackButton"
         app:layout_constraintVertical_bias="0.139" />
 
 
