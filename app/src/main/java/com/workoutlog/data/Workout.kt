@@ -1,8 +1,8 @@
 package com.workoutlog.data
 
 data class Workout(
-        var name : String,
-        var exerciseList : ArrayList<Exercise>,
+        val name : String,
+        val exerciseList : ArrayList<Exercise>,
 ) {
-    constructor() : this("", ArrayList<Exercise>())
+    constructor(name: String) : this(name, ArrayList<Exercise>())
 }

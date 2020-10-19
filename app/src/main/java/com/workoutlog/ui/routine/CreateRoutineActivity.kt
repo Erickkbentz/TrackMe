@@ -24,6 +24,7 @@ class CreateRoutineActivity : AppCompatActivity() {
 
                 val b = Bundle()
                 b.putString("routineName", routineName)
+                b.putString("routineType", "PPL")
                 intent.putExtras(b)
 
                 startActivity(intent)

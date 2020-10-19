@@ -1,3 +1,8 @@
 package com.workoutlog.data
 
-class Routine(name: String)
+data class Routine(val name: String, val workoutList : ArrayList<Workout>) {
+
+
+}
+
+
