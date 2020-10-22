@@ -13,6 +13,8 @@
     <string name="edit_view_name">Edit View Name</string>
     <string name="add_item_text">Add Item Text</string>
     <string name="item_text">Item Label</string>
-    <string name="pplAddItemTextHint">Add Day Version (eg. PushV2)</string>
+    <string name="pplAddItemTextHint">Add Day Version (eg. Push v2)</string>
+    <string name="upperLowerItemTextHint">Add Day Version (eg. Upper v2)</string>
+    <string name="fullBodyItemTextHint">Add Day Version (eg. FullBody v2)</string>
     <string name="edit">Edit Day</string>
 </resources>

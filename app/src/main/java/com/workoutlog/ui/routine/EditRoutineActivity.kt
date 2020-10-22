@@ -6,6 +6,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.workoutlog.R
 import com.workoutlog.data.Routine
+import com.workoutlog.data.RoutineType
 import com.workoutlog.data.Workout
 
 class EditRoutineActivity() :AppCompatActivity() {
@@ -21,35 +22,30 @@ class EditRoutineActivity() :AppCompatActivity() {
             val addItemTextView = findViewById<TextView>(R.id.addItemTextView)
 
             val routineName = bundle.getString("routineName")
-            val routineType = bundle.getString("routineType") as String
+            val ordinal = bundle.getInt("routineTypeOrdinal")
+            val routineType = RoutineType.values()[ordinal]
 
             editViewTextView.text = routineName
-
-            if (routineType == "PPL") {
-                addItemTextView.text = getString(R.string.pplAddItemTextHint)
+            when (routineType) {
+                RoutineType.PPL -> {
+                    addItemTextView.text = getString(R.string.pplAddItemTextHint)
+                }
+                RoutineType.UPPER_LOWER -> {
+                    addItemTextView.text = getString(R.string.upperLowerItemTextHint)
+                }
+                RoutineType.FULL_BODY -> {
+                    addItemTextView.text = getString(R.string.fullBodyItemTextHint)
+                }
             }
-            val routine = createStartingRoutine(routineType)
+
+            val routine = Routine(routineName!!, routineType)
             val adapter = WorkoutListAdapter(this,
                 R.layout.workout_list_item,
-                routine?.workoutList as ArrayList<Workout>
+                routine.workoutList
             )
 
             listView.adapter = adapter
-
-
         }
-    }
-
-
-    private fun createStartingRoutine(name : String): Routine? {
-        if (name == "PPL") {
-            return Routine(name, arrayListOf(
-                Workout("Push"),
-                Workout("Pull"),
-                Workout("Legs")
-            ))
-        }
-        return null
     }
 
 }
