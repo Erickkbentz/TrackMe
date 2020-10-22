@@ -29,10 +29,12 @@
         android:layout_width="425dp"
         android:layout_height="71dp"
         android:background="@drawable/round_corner_white"
+        android:focusableInTouchMode="true"
+        android:imeOptions="actionDone"
+        android:inputType="text"
 
         android:hint="@string/enter"
         android:textColorHint="@color/grey"
-        android:inputType="text"
         android:maxLength="40"
         android:maxLines="1"
         android:textColor="@color/black"
