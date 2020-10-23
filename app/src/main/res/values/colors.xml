@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_main">#8457C1</color>
+    <color name="purple_light">#867799</color>
+    <color name="purple_dark">#61408D</color>
     <color name="background_dark">#161A23</color>
     <color name="white">#FFFFFFFF</color>
     <color name="black">#000000</color>
