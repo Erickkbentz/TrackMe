@@ -3,9 +3,10 @@
 </p>
 <hr/>
 
-I don't have time to go through all the clutter that other similar apps have when I'm on a time crunch at the gym. I was bored, but I also needed an easy, convenient way to track my workouts so I'm making this.
-\
-\
+Zoom University is lame and I'm tired of not being able to go out, so now I'm learning how to make Android Apps!
+
+Why make TrackMe? - I wanted an easy and convenient app to track my workouts because I didn't like all the clutter that many of the other workout tracking apps have.
+
 This is still a work in progress, but I'll show some previews even though no one will probably see any of this.
 
 # Previews
