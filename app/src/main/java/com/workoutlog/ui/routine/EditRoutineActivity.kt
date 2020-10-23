@@ -1,6 +1,7 @@
 package com.workoutlog.ui.routine
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,7 @@ class EditRoutineActivity() :AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.edit_list_view)
+
         val bundle = intent.extras
         if (bundle != null) {
             val listView = findViewById<ListView>(R.id.listView)
@@ -45,6 +47,28 @@ class EditRoutineActivity() :AppCompatActivity() {
             )
 
             listView.adapter = adapter
+
+            val addItemButton = findViewById<Button>(R.id.addItemButton)
+            addItemButton.setOnClickListener {
+                // TODO: add pop up or such to select/name workout version
+                val newWorkoutItemName = when (routineType){
+                    RoutineType.PPL -> {
+                        "Push v2"
+                    }
+                    RoutineType.UPPER_LOWER -> {
+                        "Upper v2"
+                    }
+                    RoutineType.FULL_BODY -> {
+                        "Full Body v2"
+                    }
+                }
+
+                routine.workoutList.add(Workout(newWorkoutItemName))
+                adapter.notifyDataSetChanged()
+            }
+
+        } else {
+            throw IllegalStateException()
         }
     }
 
