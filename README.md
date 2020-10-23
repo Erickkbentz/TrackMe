@@ -12,21 +12,21 @@ This is still a work in progress, but I'll show some previews even though no one
 # Previews
 #### Main Screen
 <p>
-    <img src="images/MainScreen.jpg" width="200">
+    <img src="images/MainScreen.jpg" width="350">
 </p>
 
 
 #### Create Routine Screen
 <p>
-    <img src="images/CreateRoutineScreen.jpg" width="200">
+    <img src="images/CreateRoutineScreen.jpg" width="350">
 </p>
 
 
 #### Edit Routine Screen
 <p>
-    <img src="images/EditListViewStart.jpg" width="200">
+    <img src="images/EditListViewStart.jpg" width="350">
 </p>
 
 <p>
-    <img src="images/EditListViewDelete.jpg" width="200">
+    <img src="images/EditListViewDelete.jpg" width="350">
 </p>
