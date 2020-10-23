@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.*
 import androidx.annotation.LayoutRes
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -39,6 +40,7 @@ class WorkoutListAdapter(context : Context,
         val editItemButton = view.findViewById<Button>(R.id.editItemButton)
 
         itemBoxLayout.setOnLongClickListener {
+            itemBoxLayout.startAnimation(AnimationUtils.loadAnimation(view!!.context, R.anim.wobble))
             editHintTextView.isVisible = !editHintTextView.isVisible
             editItemButton.isVisible = !editItemButton.isVisible
             deleteButton.isVisible = !deleteButton.isVisible
